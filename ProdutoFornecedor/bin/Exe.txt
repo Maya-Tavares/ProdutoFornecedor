@@ -1,0 +1,44 @@
+Implemente um programa em Java para gerenciar o cadastro de produtos em uma
+empresa. O sistema deve permitir o armazenamento dos produtos em uma lista
+duplamente encadeada parametrizada e fazer uso da composição de objetos, uma vez que
+todo produto está associado a um fornecedor.
+Regras gerais:
+ Cada Produto possui os seguintes dados:
+ nome do produto
+ valor (preço unitário)
+ quantidade em estoque
+ fornecedor (objeto Fornecedor)
+ Cada Fornecedor possui:
+ nome do fornecedor
+ CNPJ
+
+Regras de cadastro:
+ Antes de cadastrar um produto, o sistema deve perguntar o CNPJ do fornecedor.
+Caso o fornecedor com esse CNPJ já esteja cadastrado, ele será utilizado na
+composição do novo produto. Caso não esteja cadastrado, o programa deve solicitar
+o nome do fornecedor e cadastrar o novo fornecedor antes de continuar o cadastro
+do produto.
+Menu de opções:
+O programa deve exibir continuamente o seguinte menu até que o usuário escolha a opção
+de finalizar:
+1. Cadastrar produto
+2. Pesquisar produto por nome
+3. Pesquisar fornecedor por CNPJ
+4. Finalizar
+
+Funcionalidades:
+ Cadastrar produto: solicita os dados do produto e verifica se o fornecedor já está
+cadastrado (com base no CNPJ). Se não estiver, cadastra-o.
+ Pesquisar produto por nome: busca o produto na lista e exibe seus dados, inclusive os do
+fornecedor.
+ Pesquisar fornecedor por CNPJ: busca na lista de fornecedores e exibe seus dados, se
+encontrado.
+ Finalizar: encerra o programa.
+
+Requisitos técnicos:
+ Utilize uma lista (vetor) para armazenar os produtos.
+ Armazene os fornecedores em uma lista (vetor).
+ A classe Produto deve conter um atributo do tipo Fornecedor. A classe deve ter o
+método construtor codificado para inicializar os atributos do objeto.
+ A classe Fornecedor deve ter o método construtor codificado para inicializar os atributos
+do objeto
