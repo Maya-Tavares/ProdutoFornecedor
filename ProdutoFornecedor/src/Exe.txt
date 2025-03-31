@@ -3,11 +3,13 @@ empresa. O sistema deve permitir o armazenamento dos produtos em uma lista
 duplamente encadeada parametrizada e fazer uso da composição de objetos, uma vez que
 todo produto está associado a um fornecedor.
 Regras gerais:
+
  Cada Produto possui os seguintes dados:
  nome do produto
  valor (preço unitário)
  quantidade em estoque
  fornecedor (objeto Fornecedor)
+
  Cada Fornecedor possui:
  nome do fornecedor
  CNPJ
