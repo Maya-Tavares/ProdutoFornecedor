@@ -77,6 +77,8 @@ public class Util {
         String nome = showInputDialog("Nome do Fornecedor: ");
         long cnpj = parseLong(showInputDialog("CNPJ do Fornecedor: "));
 
+        fornecedor[indexFornecedor] = new Fornecedor(nome, cnpj);
+        indexFornecedor++;
     }
 
     public void pesquisarProduto() {
